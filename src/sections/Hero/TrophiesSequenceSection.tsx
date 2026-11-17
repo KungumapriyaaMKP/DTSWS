@@ -18,6 +18,7 @@ export const TrophiesSequenceSection: React.FC<TrophiesSequenceSectionProps> = (
 }) => {
   const sectionRef = useRef<HTMLElement>(null);
   const progressRef = useRef(capabilities.prefersReducedMotion ? 0.95 : 0);
+  const captionRef = useRef<HTMLDivElement>(null);
   const { scrollTo } = useSmoothScroll();
 
   useEffect(() => {
@@ -31,6 +32,11 @@ export const TrophiesSequenceSection: React.FC<TrophiesSequenceSectionProps> = (
       scrub: true,
       onUpdate: (self) => {
         progressRef.current = self.progress;
+        if (captionRef.current) {
+          const fade = Math.max(0, Math.min(1, 1 - (self.progress - 0.5) / 0.32));
+          captionRef.current.style.opacity = fade.toFixed(3);
+          captionRef.current.style.transform = `translate3d(0, ${((1 - fade) * -12).toFixed(1)}px, 0)`;
+        }
       },
     });
 
@@ -51,8 +57,23 @@ export const TrophiesSequenceSection: React.FC<TrophiesSequenceSectionProps> = (
           />
         </div>
 
-        {/* Subtle Perimeter Cinema Edge Vignette */}
+        {/* Subtle Perimeter Cinema Edge Vignette & Top Contrast Scrim */}
         <div className="cinema-vignette pointer-events-none absolute inset-0 z-10 opacity-45" />
+        <div className="cinema-letterbox-top pointer-events-none absolute inset-x-0 top-0 z-10 h-32 opacity-85" />
+
+        {/* Matching Top Bold Single-Line Tagline Over Five Championship Trophies */}
+        <div
+          ref={captionRef}
+          className="pointer-events-none absolute inset-x-4 top-5 z-20 flex justify-center text-center will-change-transform sm:inset-x-8 sm:top-7"
+        >
+          <h2
+            className="whitespace-nowrap font-serif font-bold tracking-[0.11em] text-[#FFFFFF] [text-shadow:0_2px_20px_rgba(4,5,7,0.95)]"
+            style={{ fontSize: 'clamp(11.5px, 2.15vw, 31px)' }}
+          >
+            HE STAYED CALM, AND{' '}
+            <span className="font-bold italic text-[#FFD60A]">FIVE CROWNS</span> FOLLOWED.
+          </h2>
+        </div>
 
         {/* Text-Free Bottom Scroll Indicator Icon */}
         <div className="pointer-events-auto absolute inset-x-0 bottom-6 z-20 flex justify-center">
