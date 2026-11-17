@@ -1,0 +1,30 @@
+# Wikimedia Commons Media Attribution & Licenses
+
+- **cricket-pitch-making.jpg** — `File:Cricket_pitch_making.jpg` | License: CC0 | Author: Pranabjyoti 2026
+- **kharagpur-station.jpg** — `File:Kharagpur_Railway_Station_1.JPG` | License: CC BY 2.5 | Author: Ambuj Saxena
+- **ms-dhoni-2008.jpg** — `File:MS_Dhoni.jpg` | License: CC BY-SA 3.0 | Author: Blnguyen
+- **dhoni-batting-2013.jpg** — `File:Mahendra_Singh_Dhoni_batting.JPG` | License: CC BY-SA 3.0 | Author: Dee03
+- **dhoni-stumps.jpg** — `File:Dhoni_behind_Stumps.jpg` | License: CC BY-SA 2.0 | Author: Pulkitsinha
+- **dhoni-jan-2016.jpg** — `File:Mahendra_Singh_Dhoni_January_2016.jpg` | License: CC BY 3.0 | Author: Bollywood Hungama
+- **dhoni-padma-bhushan.jpg** — `File:Mahendra_Singh_Dhoni_receiving_Padma_Bhushan.jpg` | License: GODL-India | Author: President's Secretariat
+- **chepauk-csk-night.jpg** — `File:MA_Chidambaram_Stadium_In_the_Night_during_a_CSK_Game.jpg` | License: CC BY-SA 3.0 | Author: BCCI/Sportzpics
+- **chepauk-ipl-2013.jpg** — `File:Chepauk_during_a_IPL_match_in_2013.jpg` | License: CC BY-SA 3.0 | Author: Rohithriaz
+- **chepauk-panorama.jpg** — `File:Ma_ChidambaramStadium_panorama.jpg` | License: CC BY-SA 3.0 | Author: Prasad1287
+- **wankhede-night.jpg** — `File:Wankhede-1.JPG` | License: Public domain | Author: Sports Fan
+- **wankhede-wcf.jpg** — `File:Wankhede_ICC_WCF.jpg` | License: CC BY-SA 3.0 | Author: G patkar
+- **ahmedabad-stadium.jpg** — `File:Narendra_Modi_Stadium_view_from_the_gallery.jpg` | License: CC BY-SA 4.0 | Author: A Cricket Premi
+- **ms-dhoni-signature.png** — `File:MS_Dhoni_signature.png` | License: Public domain | Author: MS Dhoni
+- **dhoni-2011.jpg** — `File:MS Dhoni in 2011.jpg` | License: CC BY 3.0 | Author: Bollywood Hungama
+- **csk-2018-match.jpg** — `File:IPL 2018 - CSK vs KXIP.jpg` | License: CC BY-SA 4.0 | Author: Arjun1001
+- **csk-chepauk-kkr.jpg** — `File:IPL T20 Chennai vs Kolkata.JPG` | License: CC BY 3.0 | Author: Chandrachoodan Gopalakrishnan
+- **csk-2014-elim.jpg** — `File:IPL Eliminator 2014.jpg` | License: CC BY-SA 3.0 | Author: AroundTheGlobe
+- **dhoni-hayden.jpg** — `File:Hayden and Dhoni.jpg` | License: CC BY 2.0 | Author: Matt Dawson
+- **dhoni-2016-action.jpg** — `File:MS Dhoni 2016.jpg` | License: CC BY-SA 4.0 | Author: Amardeep Singh
+- **dhoni-2023.jpg** — `File:MS Dhoni (Prabhav '23 - RiGI 2023).jpg` | License: CC BY 3.0 | Author: RIGI
+- **dhoni-fielding.jpg** — `File:MS Dhoni fielding.jpg` | License: CC BY-SA 3.0 | Author: Blnguyen
+- **dhoni-portrait-main.jpg** — `File:Mahendra Singh Dhoni.jpg` | License: CC BY 4.0 | Author: Sarkar Jaydeep
+- **dhoni-jersey-7.jpg** — `File:MS Dhoni's jersey at Blades of Glory Cricket Museum, Pune.jpg` | License: CC BY 4.0 | Author: DesiBoy101
+- **dhoni-kit-bat.jpg** — `File:Wicketkeeping kit and bat of MS Dhoni at Blades of Glory Cricket Museum, Pune.jpg` | License: CC BY 4.0 | Author: DesiBoy101
+- **chepauk-floodlight.jpg** — `File:Floodlight at M. A. Chidambaram Stadium, Chennai.jpg` | License: CC BY-SA 3.0 | Author: Aravind Sivaraj
+- **chepauk-yellow-stands.jpg** — `File:Yellow foldable seats at the M. A. Chidambaram Stadium.jpg` | License: CC BY-SA 3.0 | Author: Aravind Sivaraj
+- **chepauk-fan.jpg** — `File:A Cricket fan at the Chepauk stadium, Chennai.jpg` | License: CC BY 2.0 | Author: B. Sandman

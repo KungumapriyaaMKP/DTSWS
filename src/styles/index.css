@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-void: #ffffff;
+  --bg-charcoal: #faf8f2;
+  --bg-obsidian: #f3efe4;
+  --csk-yellow: #ffd60a;
+  --csk-yellow-bright: #ffe63b;
+  --gold-champagne: #f5b800;
+  --gold-metallic: #e09f00;
+  --gold-deep: #b37800;
+  --text-warm: #0b0d12;
+  --text-muted: #525661;
+}
+
+@layer base {
+  html {
+    background-color: #ffffff;
+    color: #0b0d12;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: clip;
+    scroll-behavior: auto;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #0b0d12;
+    overflow-x: clip;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (pointer: fine) {
+    body.custom-cursor-active,
+    body.custom-cursor-active * {
+      cursor: none !important;
+    }
+  }
+}
+
+/* Radiant Bright Yellow & Warm Gold Typography (Legible on White) */
+.text-gold-metallic {
+  background: linear-gradient(
+    135deg,
+    #b87d00 0%,
+    #e5a600 30%,
+    #ffd60a 56%,
+    #f5b000 80%,
+    #996600 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-csk-highlight {
+  background: linear-gradient(120deg, #e09f00 0%, #ffd60a 48%, #c98800 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Subtle Static Paper Vignette (GPU-friendly, zero mix-blend or filter repaints) */
+.film-grain-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 45;
+  opacity: 0.035;
+  background-image: radial-gradient(rgba(11, 13, 18, 0.45) 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+}
+
+@keyframes kenBurnsSlow {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.09) translate3d(-1.2%, -0.8%, 0);
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+.animate-ken-burns {
+  animation: kenBurnsSlow 22s ease-in-out infinite;
+}
+
+@keyframes pulseAura {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+
+.animate-aura {
+  animation: pulseAura 5.5s ease-in-out infinite;
+}
+
+@keyframes slowOrbitSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-orbit-slow {
+  animation: slowOrbitSpin 38s linear infinite;
+}
+
+@keyframes filmstripScroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-filmstrip {
+  animation: filmstripScroll 32s linear infinite;
+}
+
+/* Cinema Vignette & Framing */
+.cinema-vignette {
+  background: radial-gradient(
+    ellipse at 50% 45%,
+    transparent 35%,
+    rgba(4, 5, 7, 0.48) 78%,
+    rgba(4, 5, 7, 0.88) 100%
+  );
+}
+
+.cinema-letterbox-top {
+  background: linear-gradient(to bottom, rgba(4, 5, 7, 0.9) 0%, transparent 100%);
+}
+
+.cinema-letterbox-bottom {
+  background: linear-gradient(to top, rgba(4, 5, 7, 0.92) 0%, transparent 100%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf8f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffd60a;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5a900;
+}
+
+@keyframes eqBarWave {
+  0%,
+  100% {
+    transform: scaleY(0.32);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-eq-bar {
+  transform-origin: bottom center;
+  animation: eqBarWave 1.25s ease-in-out infinite;
+}
+
+/* Reduced Motion Respect */
+@media (prefers-reduced-motion: reduce) {
+  .film-grain-overlay,
+  .animate-ken-burns,
+  .animate-aura,
+  .animate-orbit-slow,
+  .animate-eq-bar {
+    animation: none;
+  }
+}
