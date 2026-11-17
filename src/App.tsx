@@ -19,12 +19,17 @@ import { KineticMarquee } from './components/Motion/KineticMarquee';
 import { ChepaukRoarHook } from './sections/Hook/ChepaukRoarHook';
 import { useExperienceCapabilities } from './hooks/useExperienceState';
 import { audioEngine } from './utils/audioEngine';
+import { preloadEditorialMedia } from './utils/mediaPreloader';
 
 const ExperienceShell: React.FC = () => {
   const capabilities = useExperienceCapabilities();
   const [loaderDone, setLoaderDone] = useState(false);
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const progressBarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    preloadEditorialMedia();
+  }, []);
 
   useEffect(() => {
     const refreshId = window.setTimeout(() => {

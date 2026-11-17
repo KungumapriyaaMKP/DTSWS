@@ -139,17 +139,32 @@ export const ChepaukRoarHook: React.FC = () => {
       className="relative flex min-h-[82vh] items-center justify-center overflow-hidden border-t border-[#FFD60A]/20 bg-[#0B0D12] px-6 py-24 text-[#FFFFFF] select-none sm:px-10"
       style={{ transform: `translate3d(${shakeX}px, ${shakeY}px, 0)` }}
     >
-      {/* Full-Bleed MS Dhoni Photos Clearly Visible Behind Open UI */}
+      {/* Full-Bleed MS Dhoni Photos Uncropped & Radial-Feathered Into Void */}
       <div
-        className="pointer-events-none absolute inset-0 transition-opacity duration-300"
-        style={{ opacity: erupted ? 0.58 : 0.48 + charge * 0.16 }}
+        className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden transition-opacity duration-300"
+        style={{ opacity: erupted ? 0.4 : 0.34 + charge * 0.16 }}
       >
         <img
           src={FLASH_IMAGES[flashIdx]}
           alt=""
-          className="h-full w-full object-cover object-top filter contrast-105 saturate-[1.15]"
+          aria-hidden="true"
+          loading="eager"
+          decoding="async"
+          className="absolute inset-0 h-full w-full scale-110 object-cover object-center opacity-35 blur-2xl filter saturate-125"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0B0D12]/40 via-transparent to-[#0B0D12]/45" />
+        <img
+          src={FLASH_IMAGES[flashIdx]}
+          alt=""
+          loading="eager"
+          decoding="async"
+          style={{
+            WebkitMaskImage:
+              'radial-gradient(ellipse 74% 84% at 50% 48%, black 46%, transparent 98%)',
+            maskImage: 'radial-gradient(ellipse 74% 84% at 50% 48%, black 46%, transparent 98%)',
+          }}
+          className="relative h-full w-auto max-w-full object-contain object-center filter contrast-105 saturate-[1.15]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0B0D12]/45 via-transparent to-[#0B0D12]/55" />
       </div>
 
       {/* Twin Floodlight Top Cones & Subtle Yellow Aura */}

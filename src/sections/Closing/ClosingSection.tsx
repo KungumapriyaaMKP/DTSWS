@@ -44,7 +44,8 @@ export const ClosingSection: React.FC = () => {
         <img
           src={PHOTO_ASSETS.chepaukNight.src}
           alt={PHOTO_ASSETS.chepaukNight.alt}
-          loading="lazy"
+          loading="eager"
+          decoding="async"
           className="animate-ken-burns h-full w-full object-cover object-center opacity-[0.14] filter saturate-150"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF]/80 to-[#FAF8F2]" />

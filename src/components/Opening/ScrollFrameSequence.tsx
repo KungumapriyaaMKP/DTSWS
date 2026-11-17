@@ -151,7 +151,7 @@ export const ScrollFrameSequence: React.FC<ScrollFrameSequenceProps> = ({
       }
 
       // 4. Fill remaining dense frames sorted dynamically around the active playhead
-      const batchSize = 6;
+      const batchSize = 4;
       while (!cancelled) {
         const rawProg = progressRef ? progressRef.current : propProgressRef.current;
         const anchor = Math.round(Math.min(1, Math.max(0, rawProg)) * (frameCount - 1));

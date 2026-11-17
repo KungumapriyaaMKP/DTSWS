@@ -157,8 +157,9 @@ export const LegacyStatsSection: React.FC<{ capabilities: ExperienceCapabilities
               key={i}
               src={src}
               alt=""
-              loading="lazy"
-              className="h-full w-[28vw] min-w-[260px] object-cover object-top filter saturate-50"
+              loading="eager"
+              decoding="async"
+              className="h-full w-auto max-w-[440px] shrink-0 object-cover object-center filter saturate-50"
             />
           ))}
         </div>
