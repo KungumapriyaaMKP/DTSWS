@@ -530,13 +530,13 @@ export function createCricketBallTextures(): {
   const [roughCanvas, rCtx] = makeCanvas(w, h);
   const [bumpCanvas, bCtx] = makeCanvas(w, h);
 
-  // Rich lacquered cherry-crimson leather gradient
+  // Rich lacquered crimson-red match leather gradient
   const grad = aCtx.createLinearGradient(0, 0, 0, h);
-  grad.addColorStop(0, '#6a0d12');
-  grad.addColorStop(0.42, '#99161d');
-  grad.addColorStop(0.5, '#7c1016');
-  grad.addColorStop(0.58, '#99161d');
-  grad.addColorStop(1, '#6a0d12');
+  grad.addColorStop(0, '#850812');
+  grad.addColorStop(0.4, '#c71120');
+  grad.addColorStop(0.5, '#9d0c16');
+  grad.addColorStop(0.6, '#c71120');
+  grad.addColorStop(1, '#850812');
   aCtx.fillStyle = grad;
   aCtx.fillRect(0, 0, w, h);
 

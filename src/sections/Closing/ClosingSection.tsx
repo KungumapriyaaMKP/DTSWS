@@ -51,45 +51,14 @@ export const ClosingSection: React.FC = () => {
         <div className="animate-aura absolute inset-0 bg-[radial-gradient(ellipse_at_50%_54%,rgba(255,214,10,0.45),transparent_62%)]" />
       </div>
 
-      {/* Rotating Championship Halo Ring + Centered Spinning Cricket Ball Behind MS DHONI */}
-      <div className="pointer-events-none absolute z-[5] flex items-center justify-center">
-        <div className="relative flex h-[440px] w-[440px] items-center justify-center sm:h-[620px] sm:w-[620px]">
-          <svg className="animate-orbit-slow h-full w-full opacity-60" viewBox="0 0 320 320">
-            <circle
-              cx="160"
-              cy="160"
-              r="152"
-              fill="none"
-              stroke="#FFD60A"
-              strokeWidth="1.2"
-              strokeDasharray="6 10"
-            />
-            <circle
-              cx="160"
-              cy="160"
-              r="134"
-              fill="none"
-              stroke="#E5A900"
-              strokeOpacity="0.55"
-              strokeWidth="0.9"
-            />
-          </svg>
-
-          {/* Big 3D Spinning Cricket Ball Centered Directly Inside the Halo Circle */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-[0.42]">
-            <RevolvingCricketBall className="h-[370px] w-[370px] sm:h-[520px] sm:w-[520px]" />
-          </div>
-        </div>
-      </div>
-
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl">
-        <div className="space-y-2 [text-shadow:0_2px_18px_rgba(255,255,255,0.92)]">
+      <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center">
+        <div className="space-y-2">
           <ScrollRevealText
             as="p"
             text="NOT EVERY HERO NEEDS A CROWN."
             delay={0.05}
-            className="font-serif text-2xl font-light tracking-[0.08em] text-[#0B0D12]/80 sm:text-4xl"
+            className="font-serif text-2xl font-light tracking-[0.08em] text-[#525661] sm:text-4xl"
           />
           <ScrollRevealText
             as="p"
@@ -102,35 +71,69 @@ export const ClosingSection: React.FC = () => {
           />
         </div>
 
-        <div className="closing-stagger mx-auto my-12 h-[2px] w-24 bg-[#FFD60A]" />
+        <div className="closing-stagger mx-auto my-8 h-[2px] w-24 bg-[#FFD60A]" />
 
-        <ScrollRevealText
-          text="MS DHONI."
-          delay={0.1}
-          stagger={0.08}
-          className="font-display text-5xl font-semibold tracking-[0.22em] text-[#0B0D12] [text-shadow:0_0_24px_rgba(255,255,255,0.96),0_2px_12px_rgba(255,255,255,0.9)] sm:text-7xl md:text-8xl"
-        />
-        <ScrollRevealText
-          as="p"
-          text="A LEGACY BEYOND THE BOUNDARIES."
-          delay={0.26}
-          className="mt-4 font-serif text-lg font-semibold uppercase tracking-[0.24em] text-[#9A6300] [text-shadow:0_2px_16px_rgba(255,255,255,0.95)] sm:text-2xl"
-        />
-
-        {/* Authentic Signature in Crisp Dark Ink */}
-        {!sigError && (
-          <div className="closing-stagger mt-10 flex flex-col items-center">
-            <img
-              src={PHOTO_ASSETS.dhoniSignature.src}
-              alt={PHOTO_ASSETS.dhoniSignature.alt}
-              onError={() => setSigError(true)}
-              className="h-14 w-auto opacity-85"
+        {/* Big Championship Halo Circle Holding the Clear Deep Red Spinning Cricket Ball */}
+        <div className="relative flex h-[370px] w-[370px] items-center justify-center sm:h-[520px] sm:w-[520px]">
+          <svg
+            className="animate-orbit-slow pointer-events-none absolute inset-0 h-full w-full opacity-75"
+            viewBox="0 0 320 320"
+          >
+            <circle
+              cx="160"
+              cy="160"
+              r="152"
+              fill="none"
+              stroke="#FFD60A"
+              strokeWidth="1.4"
+              strokeDasharray="6 10"
             />
-            <span className="mt-1.5 font-mono text-[9px] font-medium uppercase tracking-[0.26em] text-[#525661]">
-              Jersey No. 07 · Ranchi · Chennai
-            </span>
+            <circle
+              cx="160"
+              cy="160"
+              r="134"
+              fill="none"
+              stroke="#E5A900"
+              strokeOpacity="0.65"
+              strokeWidth="1"
+            />
+          </svg>
+
+          {/* Full-Opacity Clear Deep Red Spinning 3D Cricket Ball */}
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+            <RevolvingCricketBall className="h-[340px] w-[340px] sm:h-[490px] sm:w-[490px]" />
           </div>
-        )}
+
+          {/* Crisp High-Contrast Overlay Inside the Crimson Sphere */}
+          <div className="relative z-10 flex flex-col items-center px-6 text-center">
+            <ScrollRevealText
+              text="MS DHONI."
+              delay={0.1}
+              stagger={0.08}
+              className="font-display text-3xl font-semibold tracking-[0.16em] text-[#FFFFFF] [text-shadow:0_3px_22px_rgba(35,0,5,0.9)] sm:text-5xl"
+            />
+            <ScrollRevealText
+              as="p"
+              text="A LEGACY BEYOND THE BOUNDARIES."
+              delay={0.24}
+              className="mt-2 font-serif text-xs font-semibold uppercase tracking-[0.18em] text-[#FFD60A] [text-shadow:0_2px_14px_rgba(35,0,5,0.92)] sm:text-sm"
+            />
+
+            {!sigError && (
+              <div className="closing-stagger mt-5 flex flex-col items-center">
+                <img
+                  src={PHOTO_ASSETS.dhoniSignature.src}
+                  alt={PHOTO_ASSETS.dhoniSignature.alt}
+                  onError={() => setSigError(true)}
+                  className="h-10 w-auto brightness-0 invert drop-shadow-[0_2px_8px_rgba(35,0,5,0.85)] sm:h-12"
+                />
+                <span className="mt-1 font-mono text-[8.5px] font-medium uppercase tracking-[0.24em] text-[#FFFFFF]/90 [text-shadow:0_1px_10px_rgba(35,0,5,0.9)]">
+                  Jersey No. 07 · Ranchi · Chennai
+                </span>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     </section>
   );

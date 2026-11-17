@@ -316,25 +316,35 @@ const CricketBallCanvasStage: React.FC<CricketBallCanvasStageProps> = ({
         toneMappingExposure: 1.12,
       }}
     >
-      <ambientLight intensity={0.68} color="#fff9eb" />
-      <directionalLight position={[4, 5, 5]} intensity={2.6} color="#ffffff" />
-      <directionalLight position={[-4, -2, 3]} intensity={1.7} color="#ffd60a" />
-      <pointLight position={[0, 3, -3]} intensity={2.0} color="#ffe853" />
+      <ambientLight intensity={0.45} color="#fff8f2" />
+      <directionalLight position={[4, 5, 5]} intensity={2.1} color="#ffffff" />
+      <directionalLight position={[-4, -2, 3]} intensity={0.9} color="#ffd60a" />
+      <pointLight position={[0, 3, -3]} intensity={1.8} color="#ffe853" />
 
       <Environment resolution={envResolution}>
         <Lightformer
-          form="circle"
-          intensity={3.0}
+          form="rect"
+          intensity={2.4}
           color="#ffffff"
-          scale={[4, 4, 1]}
-          position={[3, 4, 4]}
+          scale={[0.45, 4.5, 1]}
+          position={[4, 4.5, 1.5]}
+          rotation={[0, -0.55, 0.35]}
         />
         <Lightformer
-          form="circle"
-          intensity={2.4}
+          form="rect"
+          intensity={1.2}
           color="#ffd60a"
-          scale={[5, 5, 1]}
-          position={[-4, 1, 2]}
+          scale={[0.35, 4, 1]}
+          position={[-4.5, -1, 0]}
+          rotation={[0, 0.65, -0.2]}
+        />
+        <Lightformer
+          form="rect"
+          intensity={1.6}
+          color="#ffffff"
+          scale={[3.2, 0.3, 1]}
+          position={[0, 5.5, 1]}
+          rotation={[0.45, 0, 0]}
         />
       </Environment>
 
@@ -396,7 +406,7 @@ export const SpinningCricketBall: React.FC<SpinningCricketBallProps> = ({
 };
 
 const MiniCricketBallFallback = () => (
-  <div className="h-full w-full scale-[0.82] rounded-full bg-[radial-gradient(circle_at_35%_30%,#d42432_0%,#8b0012_58%,#450008_100%)] shadow-[0_6px_18px_rgba(139,0,18,0.28)]" />
+  <div className="h-full w-full scale-[0.82] rounded-full bg-[radial-gradient(circle_at_35%_30%,#c8101f_0%,#850410_58%,#380005_100%)] shadow-[0_6px_18px_rgba(133,4,16,0.34)]" />
 );
 
 /**
@@ -416,8 +426,8 @@ export const RevolvingCricketBall: React.FC<{ className?: string }> = ({
           progress={100}
           ready
           spinSpeedOverride={1.35}
-          envResolution={32}
-          dpr={[1, 1.35]}
+          envResolution={64}
+          dpr={[1, 2]}
           respectActive
         />
       </Viewport3DGuard>
