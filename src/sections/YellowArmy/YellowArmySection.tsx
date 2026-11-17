@@ -105,7 +105,7 @@ export const YellowArmySection: React.FC<{ capabilities: ExperienceCapabilities 
 
           <div ref={colRightRef} className="space-y-5 md:col-span-5">
             <ArchivalImage
-              assetKey="chepaukFan"
+              assetKey="csk2018Match"
               aspectClass="aspect-[4/3]"
               priority
               className="shadow-[0_20px_56px_rgba(11,13,18,0.14)]"

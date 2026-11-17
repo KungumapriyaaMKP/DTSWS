@@ -9,11 +9,11 @@ import { audioEngine } from '../../utils/audioEngine';
 gsap.registerPlugin(ScrollTrigger);
 
 const FLASH_IMAGES = [
-  PHOTO_ASSETS.dhoni2023.src,
-  PHOTO_ASSETS.dhoni2016Action.src,
+  PHOTO_ASSETS.cskChepaukKKR.src,
   PHOTO_ASSETS.dhoniBatting.src,
+  PHOTO_ASSETS.dhoniJersey7.src,
   PHOTO_ASSETS.dhoniKeeping.src,
-  PHOTO_ASSETS.dhoniHayden.src,
+  PHOTO_ASSETS.dhoniKitBat.src,
 ];
 
 const EQ_BAR_COUNT = 28;
@@ -139,30 +139,17 @@ export const ChepaukRoarHook: React.FC = () => {
       className="relative flex min-h-[82vh] items-center justify-center overflow-hidden border-t border-[#FFD60A]/20 bg-[#0B0D12] px-6 py-24 text-[#FFFFFF] select-none sm:px-10"
       style={{ transform: `translate3d(${shakeX}px, ${shakeY}px, 0)` }}
     >
-      {/* Full-Bleed MS Dhoni Photos Uncropped & Radial-Feathered Into Void */}
+      {/* Full-Bleed Edge-to-Edge Widescreen Landscape MS Dhoni Photography */}
       <div
-        className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden transition-opacity duration-300"
+        className="pointer-events-none absolute inset-0 overflow-hidden transition-opacity duration-300"
         style={{ opacity: erupted ? 0.4 : 0.34 + charge * 0.16 }}
       >
         <img
           src={FLASH_IMAGES[flashIdx]}
           alt=""
-          aria-hidden="true"
           loading="eager"
           decoding="async"
-          className="absolute inset-0 h-full w-full scale-110 object-cover object-center opacity-35 blur-2xl filter saturate-125"
-        />
-        <img
-          src={FLASH_IMAGES[flashIdx]}
-          alt=""
-          loading="eager"
-          decoding="async"
-          style={{
-            WebkitMaskImage:
-              'radial-gradient(ellipse 74% 84% at 50% 48%, black 46%, transparent 98%)',
-            maskImage: 'radial-gradient(ellipse 74% 84% at 50% 48%, black 46%, transparent 98%)',
-          }}
-          className="relative h-full w-auto max-w-full object-contain object-center filter contrast-105 saturate-[1.15]"
+          className="h-full w-full object-cover object-[50%_40%] filter contrast-105 saturate-[1.15]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B0D12]/45 via-transparent to-[#0B0D12]/55" />
       </div>

@@ -387,8 +387,8 @@ export const CSK_TIMELINE_MILESTONES: IPLMilestone[] = [
     resultBadge: 'USD 1.5M · Inaugural Finalists',
     verifiedDetail: 'Signed as IPL’s top pick · Led CSK to the 2008 IPL Final',
     venue: 'M. A. Chidambaram Stadium, Chennai',
-    assetKey: 'dhoniHayden',
-    secondaryAssetKey: 'chepaukPanorama',
+    assetKey: 'cskChepaukKKR',
+    secondaryAssetKey: 'dhoni2011',
   },
   {
     season: '2010',
@@ -445,8 +445,8 @@ export const CSK_TIMELINE_MILESTONES: IPLMilestone[] = [
     resultBadge: 'IPL Champions · 4th Star',
     verifiedDetail: 'Final: CSK 192/3 def. KKR 165/9 by 27 runs',
     venue: 'Dubai International Stadium, UAE',
-    assetKey: 'dhoni2016Action',
-    secondaryAssetKey: 'dhoniKeeping',
+    assetKey: 'dhoniKeeping',
+    secondaryAssetKey: 'csk2014Elim',
     isTitleYear: true,
   },
   {
@@ -457,8 +457,8 @@ export const CSK_TIMELINE_MILESTONES: IPLMilestone[] = [
     resultBadge: 'IPL Champions · Record-Tying 5th',
     verifiedDetail: 'May 29, 2023: CSK 171/5 (15 ov, DLS) def. GT 214/4 · Last Ball',
     venue: 'Narendra Modi Stadium, Ahmedabad',
-    assetKey: 'dhoni2023',
-    secondaryAssetKey: 'ahmedabadStadium',
+    assetKey: 'ahmedabadStadium',
+    secondaryAssetKey: 'dhoniJersey7',
     isTitleYear: true,
   },
   {
@@ -469,7 +469,7 @@ export const CSK_TIMELINE_MILESTONES: IPLMilestone[] = [
     resultBadge: '220.55 SR (2024) · Stand-In Captain (2025)',
     verifiedDetail: '250th CSK cap Apr 14, 2024 · Led again in 2025 when called',
     venue: 'M. A. Chidambaram Stadium, Chepauk',
-    assetKey: 'dhoniPadmaBhushan',
+    assetKey: 'dhoniKitBat',
     secondaryAssetKey: 'chepaukYellowStands',
   },
 ];

@@ -12,15 +12,15 @@ export function preloadEditorialMedia(): void {
 
   const prioritizedKeys = [
     'chepaukNight',
-    'chepaukFan',
+    'csk2018Match',
     'chepaukYellowStands',
     'chepaukFloodlight',
     'chepaukCrowd2013',
-    'dhoni2023',
-    'dhoni2016Action',
+    'cskChepaukKKR',
     'dhoniBatting',
-    'dhoniKeeping',
-    'dhoniHayden',
+    'dhoniJersey7',
+    'dhoniEarlyPortrait',
+    'dhoniKitBat',
   ];
 
   const orderedUrls: string[] = [];

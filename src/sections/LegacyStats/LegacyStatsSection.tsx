@@ -18,7 +18,7 @@ const PHOTO_STRIP = [
   PHOTO_ASSETS.dhoni2011.src,
   PHOTO_ASSETS.csk2018Match.src,
   PHOTO_ASSETS.dhoniBatting.src,
-  PHOTO_ASSETS.dhoni2023.src,
+  PHOTO_ASSETS.cskChepaukKKR.src,
   PHOTO_ASSETS.chepaukNight.src,
 ];
 
